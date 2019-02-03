@@ -30,7 +30,7 @@ Things you may want to cover:
 |user_id|refference|null: false|
 |group_id|refference|null: false|
 |image|string|
-|body|text|null: false|
+|body|text|
 
 ### Association
 - belongs_to :group
