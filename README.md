@@ -27,10 +27,10 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false|
+|group_id|integer|null: false|
 |image|string|
-|body|text|null: false
+|body|text|null: false|
 
 ### Association
 - belongs_to :group
