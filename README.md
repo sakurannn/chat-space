@@ -23,6 +23,44 @@ Things you may want to cover:
 
 * ...
 
+## messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+|image|string|
+|body|text|null: false
+
+### Association
+- belongs_to :group
+- belongs_to :user
+
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|text|null: false|
+|email|string|null: false|
+|encrypted_passward|string|
+|reset_passward_token|string|
+|reset_passward_sent_at|datetime|
+|remenber_created_at|datetime|
+
+### Association
+- has_many :messages
+- has_many :members
+
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_name|text|null: false|
+
+### Association
+- has_many :members
+
 ## membersテーブル
 
 |Column|Type|Options|
@@ -33,3 +71,4 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
+
