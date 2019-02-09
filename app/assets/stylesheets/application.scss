@@ -1,0 +1,15 @@
+/*
+ *= require font-awesome
+ */
+@import "./reset";
+@import "font-awesome";
+@import "./settings/mixin";
+@import "./config/variable";
+@import "modules/*";
+
+body{
+	height: 100%;
+    width: 100%;
+}
+
+
