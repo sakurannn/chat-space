@@ -1,84 +1,84 @@
 .chat-side{
-	box-sizing: border-box;
-	height: $tate;
-	width: $sideyoko;
-	float: left;
-	&__user{
-		background-color: #090c10;
-		height: 15%;
-		width: 100%;
-		position: relative;
+  box-sizing: border-box;
+  height: $tate;
+  width: $sideyoko;
+  float: left;
+  &__user{
+    background-color: #090c10;
+    height: 15%;
+    width: 100%;
+    position: relative;
     border-bottom: 1px solid #2f3e51;
     &-content{
-		 height: 50%;
-		 width: 100%;
-		 line-height: 50px;
-		 margin: auto 0;
-		 position: absolute;
-		 top: 0;
-		 bottom: 0;
-	 }
+      height: 50%;
+      width: 100%;
+      line-height: 50px;
+      margin: auto 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+     }
     &-name{
-		color: $white;
-		font-size: 20px;
-		font-weight: bold;
-		margin: 0 20px;
-		position: relative;
-		display: inline-block;
-	 }
-   &--new-group{
-		color: $white;
-    position: relative;
-		margin-left: 90px;
-		display: inline-block;
-		 i{
-			 font-family: "Font Awesome 5 Free";
-			 font-weight: 900;
-			 content: \f044;
-			 font-size: inherit;
-			 display: inline-block;
-			 font: normal normal normal 14px/1 FontAwesome;
-			 text-rendering: auto;
-			 -webkit-font-smoothing: antialiased;
-		  }
-	 }
-	 &--edit-user{
-		 color: $white;
-		 position: relative;
-		 display:inline-block;
-		 i{
-			 font-family: "Font Awesome 5 Free";
-			 font-weight: 900;
-			 content: \f013;
-			 font-size: inherit;
-			 display: inline-block;
-			 font: normal normal normal 14px/1 FontAwesome;
-			 text-rendering: auto;
-			 -webkit-font-smoothing: antialiased;
-		  }
-	   }
-   }
-
-	 &__groups{
-		 height: 85%;
-		 width: 100%;
-		 background-color: #253141;
-		 &-list{
-			 height: 100%;
-			 color: $white;
-			 }
-    }
-	 &__group{
-			padding: 20px;
       color: $white;
-			&-name{
-				font-size: 15px;
-			 }
-			&-message{
-			 font-size: 11px;
-        margin-top: 5px;
-				}
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 20px;
+      position: relative;
+      display: inline-block;
+     }
+   &--new-group{
+     color: $white;
+     position: relative;
+     margin-left: 90px;
+     display: inline-block;
+     i{
+       font-family: "Font Awesome 5 Free";
+       font-weight: 900;
+       content: \f044;
+       font-size: inherit;
+       display: inline-block;
+       font: normal normal normal 14px/1 FontAwesome;
+       text-rendering: auto;
+       -webkit-font-smoothing: antialiased;
+      }
+   }
+    &--edit-user{
+      color: $white;
+      position: relative;
+      display:inline-block;
+      i{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: \f013;
+        font-size: inherit;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        text-rendering: auto;
+         -webkit-font-smoothing: antialiased;
+        }
+     }
+  }
 
-		}
+     &__groups{
+         height: 85%;
+         width: 100%;
+         background-color: #253141;
+         &-list{
+             height: 100%;
+             color: $white;
+             }
+    }
+     &__group{
+            padding: 20px;
+      color: $white;
+            &-name{
+                font-size: 15px;
+             }
+            &-message{
+             font-size: 11px;
+        margin-top: 5px;
+                }
+
+        }
 
 }
