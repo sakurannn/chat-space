@@ -26,7 +26,7 @@
 			}
 		}
 		&-members{
-			color:#999;
+			color: $gray;
 			font-size: 12px;
 			margin: 0 40px;
 			&i{
@@ -45,7 +45,7 @@
 	&__message{
 		padding: 20px 0;
 	    &-name{
-          color: #434A54;
+          color: $darkgray;
 		  font-size: 16px;
 		  font-weight: bold;
 		  float: left;
@@ -86,7 +86,7 @@
 				display: inline-block;
 				float: left;
 				line-height: 50px;
-				background-color: white;
+				background-color: $white;
 				.image{
 					position: absolute;
 					top: 15px;
@@ -95,7 +95,7 @@
 				}
 			}
 			.submit{
-				color: #fff;
+				color: $white;
             	width: 100px;
             	height: 50px;
             	text-align: center;
