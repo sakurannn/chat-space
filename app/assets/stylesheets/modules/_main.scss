@@ -5,33 +5,33 @@
   box-sizing: border-box;
   display: block;
   &__header{
-  height: 15%;
-  border: 1px solid #eee;
-  &--group{
-    margin: 0 40px;
-    &-name{
-    color: #333;
-    font-size: 20px;
-    margin: 35px 0 15px;
-    float: left;
+    height: 15%;
+    border: 1px solid #eee;
+    &--group{
+      margin: 0 40px;
+      &-name{
+        color: #333;
+        font-size: 20px;
+        margin: 35px 0 15px;
+        float: left;
+      }
+      &-edit-btn{
+        color: #000;
+        font-size: 15px;
+        padding: 12.5px 20px;
+        margin: 28px 20px 0;
+        border: 1px solid #38AEF0;
+        float: right;
+        text-decoration: none;
+       }
     }
-    &-edit-btn{
-    color: #000;
-    font-size: 15px;
-    padding: 12.5px 20px;
-    margin: 28px 20px 0;
-    border: 1px solid #38AEF0;
-    float: right;
-    text-decoration: none;
-     }
-   }
     &-members{
-    color: $gray;
-    font-size: 12px;
-    margin: 0 40px;
-    &i{
-      font-style: italic;
-    }
+      color: $gray;
+      font-size: 12px;
+      margin: 0 40px;
+      &i{
+        font-style: italic;
+      }
     }
   }
   &__body{
@@ -45,22 +45,22 @@
   &__message{
     padding: 20px 0;
       &-name{
-          color: $darkgray;
-      font-size: 16px;
-      font-weight: bold;
-      float: left;
-    }
+        color: $darkgray;
+        font-size: 16px;
+        font-weight: bold;
+        float: left;
+      }
       &-time{
-      color: #999;
-      font-size: 12px;
-      padding: 0 10px 10px;
-      float: left;
-    }
-    &-body {
-         color: #434A54;
-         font-size: 14px;
-         clear: both;
-        }
+        color: #999;
+        font-size: 12px;
+        padding: 0 10px 10px;
+        float: left;
+      }
+      &-body {
+        color: #434A54;
+        font-size: 14px;
+        clear: both;
+      }
   }
   &__footer{
     height: 90px;
