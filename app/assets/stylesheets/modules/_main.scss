@@ -20,13 +20,13 @@
         font-size: 15px;
         padding: 12.5px 20px;
         margin: 28px 20px 0;
-        border: 1px solid #38AEF0;
+        border: 1px solid $light_blue;
         float: right;
         text-decoration: none;
        }
     }
     &-members{
-      color: $gray;
+      color: $light_gray;
       font-size: 12px;
       margin: 0 40px;
       &i{
@@ -45,19 +45,19 @@
   &__message{
     padding: 20px 0;
       &-name{
-        color: $darkgray;
+        color: $black;
         font-size: 16px;
         font-weight: bold;
         float: left;
       }
       &-time{
-        color: #999;
+        color: $light_gray;
         font-size: 12px;
         padding: 0 10px 10px;
         float: left;
       }
       &-body {
-        color: #434A54;
+        color: $black;
         font-size: 14px;
         clear: both;
       }
