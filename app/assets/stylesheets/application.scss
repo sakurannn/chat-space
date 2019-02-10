@@ -1,8 +1,5 @@
-/*
- *= require font-awesome
- */
 @import "./reset";
-@import "font-awesome";
+@import "font-awesome-rails";
 @import "./settings/mixin";
 @import "./config/variable";
 @import "modules/*";
