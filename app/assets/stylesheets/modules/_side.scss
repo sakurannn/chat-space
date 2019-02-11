@@ -1,84 +1,47 @@
-.chat-side{
+.side-ber{
   box-sizing: border-box;
   height: $tate;
   width: $sideyoko;
   float: left;
-  &__user{
+  .header{
     background-color: #090c10;
     height: 15%;
     width: 100%;
     position: relative;
     border-bottom: 1px solid $side_blue_light;
-    &-content{
-      height: 50%;
-      width: 100%;
-      line-height: 50px;
-      margin: auto 0;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-     }
     &-name{
-      color: $white;
-      font-size: 20px;
-      font-weight: bold;
-      margin: 0 20px;
-      position: relative;
       display: inline-block;
+      font-size: $side_header_font;
+      font-weight: bold;
      }
-   &--new-group{
-     color: $white;
-     position: relative;
-     margin-left: 90px;
-     display: inline-block;
+    &-lists{
+      float: right;
+      display: inline-block;
+      .list{
+        display: inline-block;
+      }
      i{
-       font-family: "Font Awesome 5 Free";
-       font-weight: 900;
-       content: \f044;
-       font-size: inherit;
-       display: inline-block;
-       font: normal normal normal 14px/1 FontAwesome;
-       text-rendering: auto;
-       -webkit-font-smoothing: antialiased;
+       color: $white
+       font-size: $side_header_font;
       }
    }
-    &--edit-user{
-      color: $white;
-      position: relative;
-      display:inline-block;
-      i{
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: \f013;
-        font-size: inherit;
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        text-rendering: auto;
-         -webkit-font-smoothing: antialiased;
-        }
-     }
-  }
+ }
 
-     &__groups{
-       height: 85%;
-       width: 100%;
-       background-color: $side_blue_dark;
-       &-list{
-         height: 100%;
-         color: $white;
-        }
-     }
-     &__group{
-       padding: 20px;
-       color: $white;
-       &-name{
-         font-size: 15px;
+     .groups {
+       background-color: $side_blue_light;
+       height: calc(100vh - 100px);
+       padding: 0 20px;
+       .group {
+         padding: 20px 0 40px;
+         &__name {
+           color: $white;
+           font-size: $side_group_name;
        }
-       &-message{
-         font-size: 11px;
-         margin-top: 5px;
-        }
-
+       &__message {
+        color: $white;
+        font-size: $side_group_message;
+        margin-top: 5px;
+      }
     }
-
+  }
 }
