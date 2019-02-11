@@ -9,19 +9,19 @@
     width: 100%;
     position: relative;
     border-bottom: 1px solid $side_blue_light;
-    &-name{
+    &__name{
       display: inline-block;
       font-size: $side_header_font;
       font-weight: bold;
      }
-    &-lists{
+    &__lists{
       float: right;
       display: inline-block;
       .list{
         display: inline-block;
       }
-     i{
-       color: $white
+      i{
+      color: $white
        font-size: $side_header_font;
       }
    }
@@ -33,15 +33,16 @@
        padding: 0 20px;
        .group {
          padding: 20px 0 40px;
+         box-sizing: border-box;
          &__name {
            color: $white;
            font-size: $side_group_name;
-       }
-       &__message {
-        color: $white;
-        font-size: $side_group_message;
-        margin-top: 5px;
-      }
-    }
+         }
+         &__message {
+          color: $white;
+          font-size: $side_group_message;
+          margin-top: 5px;
+        }
+     }
   }
 }
