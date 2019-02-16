@@ -1,18 +1,18 @@
-.side-ber{
+.side-bar{
   box-sizing: border-box;
   height: $tate;
   width: $sideyoko;
   float: left;
   .header{
-    background-color: #090c10;
-    height: 15%;
-    width: 100%;
-    position: relative;
-    border-bottom: 1px solid $side_blue_light;
+    background-color: $side_blue_dark;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
     &__name{
       display: inline-block;
-      font-size: $side_header_font;
+      font-size: 20px;
       font-weight: bold;
+      color: $white
      }
     &__lists{
       float: right;
@@ -21,8 +21,8 @@
         display: inline-block;
       }
       .icon{
-      color: $white;
-       font-size: $side_header_font;
+        color: $white;
+        font-size: $side_header_font;
       }
    }
  }
