@@ -44,5 +44,33 @@ $(function(){
     .fail(function(){
       alert('error');
     })
-  })
+  });
+  $(function(){
+  setInterval(autoUpdate, 5000);
+  });
+  function autoUpdate() {
+    if (location.href.match(/\/groups\/\d+\/messages/)) {
+      var message_id = $('.message').last().data('message-id');
+        $.ajax({
+        url: location.href,
+        type: 'GET',
+        data: { id: message_id },
+        dataType: 'json'
+      })
+      .done(function(message) {
+        if (messages.length !== 0) {
+          messages.forEach(function(message) {
+          var html = buildHTML(message);
+            $('.messages').append(html);
+            $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight }, 'fast');
+          });
+        }
+      })
+      .fail(function() {
+        alert('自動更新に失敗しました');
+      })
+    } else {
+      clearInterval(autoUpdate);
+      }
+  };
 });
