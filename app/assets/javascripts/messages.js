@@ -45,4 +45,30 @@ $(function(){
       alert('error');
     })
   })
+
+  var interval = setInterval(function() {
+    if (location.href.match(/\/groups\/\d+\/messages/)){
+      $(".messages").animate({scrollTop:$('.messages')[0].scrollHeight});
+      var message_id = $('.message').last().data('message-id');
+
+      $.ajax({
+        url: location.href,
+        type: "GET",
+        data: {id: message_id},
+        dataType: "json"
+      })
+      .done(function(messages) {
+        data.forEach(function(message) {
+          var html = buildHTML(message);
+          $('.messages').append(html);
+          $(".messages").animate({scrollTop:$('.messages')[0].scrollHeight});
+        })
+      })
+      .fail(function() {
+        alert('自動更新に失敗しました');
+      });
+    } else {
+        clearInterval(interval);
+      }
+  } , 3000 );
 });
